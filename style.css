@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.new-todo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container-todo{
+    display: flex;
+    justify-content: center;
+}
