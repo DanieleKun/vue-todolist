@@ -20,7 +20,7 @@
             <ul v-if="todos.length > 0">
                 <li v-for="(item, i) in todos" class="todo" :key="i">
                     {{item.text}}
-                    <i class="fas fa-times"></i>
+                    <i @click="deleteItem(i)" class="fas fa-times"></i>
                 </li>
             </ul>
             <h2 v-else>Non ci sono cose da fare</h2>

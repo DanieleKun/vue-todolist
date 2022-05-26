@@ -28,7 +28,9 @@ const root = new Vue({
                 this.todos.push(addTodo);
                 this.newTodo = "";
             }
-            
+        },
+        deleteItem(idx){
+            this.todos.splice(idx, 1);
         }
     }
 
