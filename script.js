@@ -1,37 +1,38 @@
 const root = new Vue({
-    el : "#app",
-    data : {
-        newTodo : "",
-        todos : [
+    el: "#app",
+    data: {
+        newTodo: "",
+        todos: [
             {
-                text : "Ricordati di respirare",
+                text: "Ricordati di respirare",
                 done: false
             },
             {
-                text : "Studiare",
+                text: "Studiare",
                 done: true
             },
             {
-                text : "Andare a mare",
+                text: "Andare a mare",
                 done: false
             }
         ]
     },
-    methods : {
-        addItem(){
+    methods: {
+        addItem() {
             //creo nuovo oggetto
             const addTodo = new Object();
             addTodo.text = this.newTodo;
             addTodo.done = true;
             //pusho nuovo oggetto e pulisco input
-            if(this.newTodo !== ""){
+            if (this.newTodo !== "") {
                 this.todos.push(addTodo);
                 this.newTodo = "";
             }
         },
-        deleteItem(idx){
+        deleteItem(idx) {
             this.todos.splice(idx, 1);
         }
+        
     }
 
 });
