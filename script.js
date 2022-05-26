@@ -22,7 +22,7 @@ const root = new Vue({
             //creo nuovo oggetto
             const addTodo = new Object();
             addTodo.text = this.newTodo;
-            addTodo.done = true;
+            addTodo.done = false;
             //pusho nuovo oggetto e pulisco input
             if (this.newTodo !== "") {
                 this.todos.push(addTodo);
